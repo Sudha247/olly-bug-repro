@@ -1,0 +1,13 @@
+# Olly bug
+
+To reproduce the bug -
+
+```
+$ cd runtime_events_tools
+$ opam pin add .
+$ cd ../solver-service
+$ opam install . --deps-only
+$ dune build
+# Running this enough times should trigger a segfault
+$ olly gc-stats 'dune exec -- ./stress/stress.exe local --cache-dir=./cache --count=1 --internal-workers=1'
+```

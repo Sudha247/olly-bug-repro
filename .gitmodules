@@ -1,0 +1,8 @@
+[submodule "runtime_events_tools"]
+	path = runtime_events_tools
+	url = https://github.com/Sudha247/runtime_events_tools.git
+	branch = buggy
+[submodule "solver-service"]
+	path = solver-service
+	url = https://github.com/talex5/solver-service.git
+	branch = eio
